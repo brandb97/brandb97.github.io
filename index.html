@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="YLD的博客">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="YLD的博客">
+<meta property="og:locale">
+<meta property="article:author" content="YLD">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-Hans'
+  };
+</script>
+
+  <title>YLD的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">YLD的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-首页">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-标签">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-分类">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-归档">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-相册">
+
+    <a href="/image/" rel="section"><i class="fa fa-camera-retro fa-fw"></i>相册</a>
+
+  </li>
+        <li class="menu-item menu-item-旅行">
+
+    <a href="/travel/" rel="section"><i class="fa fa-mountain fa-fw"></i>旅行</a>
+
+  </li>
+        <li class="menu-item menu-item-测试">
+
+    <a href="/vue-test/" rel="section"><i class="fa fa-code fa-fw"></i>测试</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/06/30/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="YLD">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YLD的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/06/30/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-06-30 09:55:29" itemprop="dateCreated datePublished" datetime="2024-06-30T09:55:29+08:00">2024-06-30</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/01/07/blood-merchant/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="YLD">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YLD的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/01/07/blood-merchant/" class="post-title-link" itemprop="url">读《许三观卖血记》有感</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-01-07 13:44:02" itemprop="dateCreated datePublished" datetime="2024-01-07T13:44:02+08:00">2024-01-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-06-30 00:25:16" itemprop="dateModified" datetime="2024-06-30T00:25:16+08:00">2024-06-30</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>余华很聪明，他让每个人都像是未教化的泼妇、奸夫，满脑子算计和封建余孽，毫无体面可言。就在你发自内心嫌弃这些人的时候，又甩出来他们面对亲情不顾一切的善良，让我为自己之前的浅薄汗颜。——匿名好友</p>
+</blockquote>
+<p>如果问我为什么要阅读小说，或是看电影。除了一个力量十足的故事可以让人在仅仅几个小时就可以获得诸如悲伤、愤怒、胜利后的喜悦等感性体验，更吸引我的往往是故事背后的人性——善良，贪婪，勇气等等。有时我会读到故事中人物和我或者和我身边人相似之处，于是多了一份对他人理解的坦然；有时我还会读到“英雄”作出的某个决定，让我暗自伤神觉得自己绝对作不出这样决心的同时，也给我一份生活的勇气。</p>
+<p>读像许三观这样社会底层的故事时，我往往会先入为主的想“这种以肮脏环境为背景的故事断然没有什么浪漫存在，肯定是用惨淡的生活和不得已的养家糊口作为卖点的——因为许多人都有低落的时候，于是可以和小说共情，就觉得小说好看，或者是看到过分惨淡的生活，于是觉得现在过的也不错，凭空增加了一份动力”。但许三观最让我感动的是他体现出的“浪漫”的行为，也就是他对一乐的爱。一乐不是他的儿子，甚至可以算是他绿帽子的证明，他因此恨一乐。然而他也知道，除去一乐不是他的亲生儿子外，他最喜欢的就是一乐。于是，当他看到一乐“没人愿意认自己做儿子”时的伤心和无助，终于再也不去否定自己对一乐的爱，终于再也不去想一乐的亲生父亲不是他，背起一乐去吃了面条。</p>
+<p>最后我想说，看到许三观再生活中挣扎，让我感觉生活在痛苦之中时时透露着幽默，所谓卓别林说的“人生近看是一场悲剧，远看是一场喜剧”。余华说像许三观这样的人时时为了一些琐碎的不公平而吵闹烦恼，于是故事用“这就叫屌毛出的比眉毛晚，长得倒比眉毛长”结尾，让我哑然失笑。什么公平不公平，什么痛苦不痛苦，我们为了挣钱，为了名誉或者为了其他种种而觉得“为什么某某比我好”——不过就是屌毛和眉毛。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/11/14/self-aly/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="YLD">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YLD的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/11/14/self-aly/" class="post-title-link" itemprop="url">自白</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2023-11-14 22:43:17" itemprop="dateCreated datePublished" datetime="2023-11-14T22:43:17+08:00">2023-11-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-06-30 00:25:16" itemprop="dateModified" datetime="2024-06-30T00:25:16+08:00">2024-06-30</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>一个叫三岛由纪夫的作家写了《假面的自白》，我惊异于他如此好的记忆力和对自己毫无羞耻感的剖析。我便惊叹于他对个人情感的超越，自惭形秽。他的超越在于他完全的不耻，而我的狭隘在于我如同正常人一般忽略着却又纵容着我丑恶的一面。到底人的成长是不断抹掉或说抗争自己丑恶的一面呢，还是承认自己的丑恶？我一直以来保留着前一种观点，而三岛由纪夫让我觉得我应该成为后者。</p>
+<h2 id="我的小学"><a href="#我的小学" class="headerlink" title="我的小学"></a>我的小学</h2><p>我的自白从我的小学开始。关于小学的记忆非常模糊，我是一个普通的，却又学习成绩还不错的同学。我喜欢看各种杂志消磨时间，因为这种娱乐方式不带有竞争性质可以减少我的压力，这也是我之后的消磨时间的主要方式。另一个原因是当时风靡的电脑游戏并没有进入我的视野，同时我也不喜欢棋类的娱乐方式，正因此我小学希望自己成为一个作家。我还喜欢在学校当活动的报幕或者说主持人，这是我小时候展现自己的一种方式。除了这些，小学就只剩下一些糟糕的回忆，我要去练习我渐渐不喜欢了的二胡乐器，要在期末考试前和假期结束前拼命“学习”，还要面对（可能很糟糕的）成绩单被父母批评的后果。我还上了一个我完全不知道为什么要上的辅导班，此时，我大概发现我在数学此类的思考方面（即使带有我厌恶的考试性质），有一定的“天赋”。然而辅导班没有给我带来什么好印象，我不算很聪明，所以我并没有什么成绩，辅导班的高中生式的学习方法让我觉得无法适应，几次不错的考试成绩也许有我自己的功劳，但也有我母亲作为辅导班员工偷偷改掉了我卷子的答案导致我的成绩很好。道德层面上，我当时没有否定我父母的行为，因为我希望被欣赏和认可，但我也存在着一种感觉：我只是靠着见不得人的手段，导致我能够上市重点中学。当然大部分时候我会逃避这种感觉（直到高中时期对自己在物理方面盲目的自信才将我自己从这种感觉中解脱出来，我开始承认过去的糟糕，并且完全变成了纯粹的欣赏高中时的自己）。最后，不得不讲讲小学时我的恐惧。我恐惧我的父母，因为他们用暴力强迫我。我恐惧一些喜欢斗殴的同学，我害怕无法在搏斗中获胜，却又希望加入他们的游戏。这种恐惧下的压抑感，同我本来就厌恶学习的性格相结合，让我在小学毕业时的成绩下滑了许多，也不再成为老师眼中的“道德和成绩良好”的学生。最终以这个身份，我进入了一所市重点中学。</p>
+<h2 id="我的初中"><a href="#我的初中" class="headerlink" title="我的初中"></a>我的初中</h2><p>尽管我现在常常忽视“初中”在我生命中的作用，但实际上初中的种种正导致了现在的“我”的形成。确切的来说，我变得沉默，开始自慰，并试图去反抗一切都在初中时形成。</p>
+<p>初中的开始是我对小学时光的反思，学生总是习惯用成绩衡量自己的价值，而教育者则将这种价值的作用放大，我的反思就来源于在这种在这种价值观下被批评过后的罪恶感（其实还有另一个来源，我愿意之后作补充）。反思的结果是，我决定要作一个“马克思或者佛祖”一样的道德品质高尚的人。关于这种想法我有两点解释：第一，之所以是“马克思或者佛祖”，是因为这两个人在当时的我看来都有为全人类赎罪这种愿望，而我也把这种愿望作为我自己的愿望。而现在看来这种赎罪的想法是自私的，我想借“高尚的”行为替自己从前的不端赎罪；第二，这种完全抽象式的理想来源于我对死亡的恐惧，我曾被死亡终会来临这个事实震慑到无法入眠或者是头上出一直出汗。我无法接受死亡的命运，于是我希望我的名字可以被永远的记住，以免死亡将我的一切都抹去。</p>
+<h2 id="我的高中"><a href="#我的高中" class="headerlink" title="我的高中"></a>我的高中</h2>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/10/15/pain/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="YLD">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YLD的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/10/15/pain/" class="post-title-link" itemprop="url">游记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2023-10-15 07:59:03" itemprop="dateCreated datePublished" datetime="2023-10-15T07:59:03+08:00">2023-10-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-06-30 00:25:14" itemprop="dateModified" datetime="2024-06-30T00:25:14+08:00">2024-06-30</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>“生命中有三种动力……一是为了生存，二是为了社会秩序，三是为了娱乐” —— Linus B Torvalds</p>
+</blockquote>
+<p>当我走出我已经屈服并且厌倦的工作环境后，我才发现，工作环境局限了我的思考。如果不是看到公园里湖面上美丽的阳光，不是闻到傍晚时家家户户屋子里飘出的让人心情舒畅的柴米油盐的香气，除了每天为了工作不辞辛劳，谁又能想到世界上竟存在这么多平凡的美感。于是，我不禁思考，我为什么会在我认为的深渊中如此努力，是否有什么驱动着我。</p>
+<p>Linus B Torvalds用了几个例子来解释生命中完成某件事的驱动力，第一个例子是性：最初人们为了生存而繁衍，后来人们用对性的控制建立父权社会，现在性交已经是一种娱乐方式。第二个例子是战争：最初人们为了有限的资源而战，后来战争是为了建立起一个国家对另一个国家的统治，现在已经有了各种以战争为题材的游戏。</p>
+<p>我试图在生存，社会秩序和娱乐中找到一种我工作的动力。我认为应该是社会秩序。为什么社会秩序能让大部分人甘愿承担痛苦呢 —— 为了解释这个问题，我愿意提出三个基本观点：</p>
+<ul>
+<li>人类习惯于接受熟悉的环境，即使当前的环境很糟糕。</li>
+<li>（满足承受者价值取向的）痛苦可以带来自信和满足感。</li>
+<li>一种抽象或者具体的，幻想或者真实的优越感推动人的活动。</li>
+</ul>
+<p>下面我用这三点来解释社会的影响。</p>
+<h3 id="社会通过宣传和划分“阶级”维持其稳定性"><a href="#社会通过宣传和划分“阶级”维持其稳定性" class="headerlink" title="社会通过宣传和划分“阶级”维持其稳定性"></a>社会通过宣传和划分“阶级”维持其稳定性</h3><p>在我看来，所有社会都在营造一种阶级的氛围。也就是一种“什么人”比“什么人”要好的观点。做官比平民好，有钱比没钱好，有文化比没文化好，中国比西方国家好……诸如此类的观点。虽然即使不去刻意营造，人们也会自发的比较。但这种价值体系的营造，加剧了比较的过程。通过让人们时时刻刻，随时随地产生属于自己的优越感，以驱逐痛苦。</p>
+<h3 id="人们生活于这种价值体系中，即使痛苦，但无法离开优越感的诱惑，无法离开对稳定性的依赖"><a href="#人们生活于这种价值体系中，即使痛苦，但无法离开优越感的诱惑，无法离开对稳定性的依赖" class="headerlink" title="人们生活于这种价值体系中，即使痛苦，但无法离开优越感的诱惑，无法离开对稳定性的依赖"></a>人们生活于这种价值体系中，即使痛苦，但无法离开优越感的诱惑，无法离开对稳定性的依赖</h3><p>人既追求快乐，也追求稳定。富贵险中求的人寥寥无几，忙忙碌碌，形色匆匆的人却满大街都是。即使痛苦，谁能抵挡领导的夸奖，自己超过同行时的兴奋，升官发财，考入名校周围人羡慕的眼光呢？所以为了不改变当前的生活，为了珍惜当前诱人的优越感，人们活在痛苦之中，还为痛苦写出赞歌。</p>
+<h3 id="最后的话"><a href="#最后的话" class="headerlink" title="最后的话"></a>最后的话</h3><p>不妨轻松一下</p>
+<blockquote>
+<p>“男女行房前生吞十四只蝌蚪即可避孕。”——据莫言所说摘自1985年某中国报纸</p>
+</blockquote>
+<p>离开公园已有很久，我仍然忘不了公园里夜晚的清风，几个喂猫的老年人，樱花的香气和当时我自己仅保留了很短一段时间的悠然自得的心。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/30/cpointer/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="YLD">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YLD的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/09/30/cpointer/" class="post-title-link" itemprop="url">C语言的指针</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2023-09-30 22:12:00" itemprop="dateCreated datePublished" datetime="2023-09-30T22:12:00+08:00">2023-09-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-06-30 00:25:14" itemprop="dateModified" datetime="2024-06-30T00:25:14+08:00">2024-06-30</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%B6%A3%E8%B0%88/" itemprop="url" rel="index"><span itemprop="name">趣谈</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>“你完全说不清楚话……，可以来我们学校当大学老师了。” ——匿名人士</p>
+</blockquote>
+<h2 id="要抓住男人的心，就要抓住男人的胃"><a href="#要抓住男人的心，就要抓住男人的胃" class="headerlink" title="要抓住男人的心，就要抓住男人的胃"></a>要抓住男人的心，就要抓住男人的胃</h2><p>如果你学过C语言，那么这句话有没有让你想到指针呢？</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">stomach</span> &#123;</span></span><br><span class="line">    <span class="comment">// 胃里的一大堆东西（e.g.胃酸）</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">stomach</span> <span class="title">mans_stomach</span> =</span> <span class="class"><span class="keyword">struct</span> <span class="title">stomach</span> &#123;</span> <span class="comment">/* ... */</span> &#125;;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">stomach</span> *<span class="title">mans_heart</span> =</span> &amp;mans_stomach;</span><br></pre></td></tr></table></figure>
+
+<p>现在如果我们要抓住男人的心，那么相当于</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*mans_heart = \* ... *\;</span><br></pre></td></tr></table></figure>
+<p>也就是说我们抓住了他的胃。</p>
+<p>那么有没有更好的解决方案呢？比如下面这样</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> *mans_heart;</span><br></pre></td></tr></table></figure>
+
+<p>这样要抓住男人的心，不必再以胃作为前提条件，只要你愿意你抓他哪里都可以。下面是一个例子。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 假设struct eye已经定义</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">eye</span> <span class="title">mans_eye</span> =</span> INIT_EYE;</span><br><span class="line">mans_heart = (<span class="type">void</span> *)&amp;mans_eye;</span><br></pre></td></tr></table></figure>
+<p>这样，要抓住男人的心，就要抓住男人的眼睛。</p>
+<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul>
+<li>事实上，这是对Peter Van Der Linden《C专家编程》第三章分析《爱丽丝梦游记》庸俗的模仿。</li>
+<li>你看的出来吗？以比喻来描述问题的方式根本不是在<strong>解释</strong>问题，而仅仅是在理解问题的基础上获得乐趣。</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/30/introduction/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="YLD">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YLD的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/09/30/introduction/" class="post-title-link" itemprop="url">我是谁</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2023-09-30 17:28:18" itemprop="dateCreated datePublished" datetime="2023-09-30T17:28:18+08:00">2023-09-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-06-30 00:25:14" itemprop="dateModified" datetime="2024-06-30T00:25:14+08:00">2024-06-30</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AE%80%E4%BB%8B/" itemprop="url" rel="index"><span itemprop="name">简介</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>我是一个文明世界里的野蛮人。当然对于文明世界的你来说，野蛮人是什么样子很难理解。为了帮助你理解，我就像“星球大战”里的伍基族。<br><img src="/wuki.jpg" alt="楚巴卡（伍基族人）"></p>
+<p>如果你想看更多的野蛮人，不妨自己变得野蛮起来吧！</p>
+<p>我还是一个程序设计的爱好者，比起野蛮人，我也愿意用下面这段话描述我自己。</p>
+<blockquote>
+<p>工程师所存在的问题是他们采取欺骗手段以获取结果。<br>数学家所存在的问题是他们研究一些玩具性的问题以获得结果。<br>程序检验员所存在的问题是他们在玩具性的问题上采取欺骗手段以获得结果。<br>    ——匿名人士（引用于《C专家编程》Peter Van Der Linden著）</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">YLD</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">YLD</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
