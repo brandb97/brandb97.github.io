@@ -8,8 +8,10 @@ function App() {
   return (
     <>
         <Header />
-        <SideBar />
-        <AboutMe />
+        <div className="flex-container">
+            <SideBar />
+            <AboutMe />
+        </div>
         <Footer />
     </>
   )
