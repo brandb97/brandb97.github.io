@@ -1,6 +1,8 @@
 import Header from "../Header.jsx";
 import Footer from "../Footer.jsx";
 import PostCard from "./PostCard.jsx";
+import thinker from "./proverb/thinker.jpeg";
+import bash_pic from "./shell/bash.jpeg";
 import './Post.css';
 
 function Post() {
@@ -8,18 +10,18 @@ function Post() {
         <Header></Header>
         <div className="post-main">
             <PostCard
-                imgSrc="proverb/thinker.jpeg"
+                imgSrc={thinker}
                 imgAlt="Thinker"
                 title="格言集"
                 text="我最近的格言分享"
-                href="proverb/Proverb.html"
+                href="/src/post/proverb/Proverb.html"
             />
             <PostCard
-                imgSrc="shell/bash.jpeg"
+                imgSrc={bash_pic}
                 imgAlt="Bash"
                 title="shell tips"
                 text="我的bash小技巧"
-                href="shell/ShellTips.html"
+                href="/src/post/shell/ShellTips.html"
             />
         </div>
         <Footer></Footer>
