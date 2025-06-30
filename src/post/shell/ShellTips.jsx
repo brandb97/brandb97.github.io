@@ -20,6 +20,9 @@ function ShellTips() {
         <Header></Header>
         <div className='flex-container'>
             <div className='post-body'>
+                <div className='warning'>
+                    💡请在 <code>bash</code> 下执行该命令。
+                </div>
                 <h1>{title}</h1>
                 <div>{content}</div>
                 <div className='button'>
