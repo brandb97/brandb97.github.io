@@ -17,3 +17,10 @@
     text-align: center;
     margin-left: 500px;
 }
+
+.proverb-body {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}

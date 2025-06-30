@@ -1,0 +1,17 @@
+.short-shell-tip {
+    border: 1px solid hsla(227, 6%, 28%, 0.324);
+    padding: 20px;
+}
+
+.short-shell-tip code {
+    text-align: center;
+}
+
+.short-shell-tip a {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.short-shell-tip p {
+    margin-left: 2em;
+}

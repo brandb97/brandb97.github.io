@@ -1,6 +1,8 @@
 import me_and_rust_image from "./assets/me_and_rust.jpg";
 import birthday_png from "./assets/birthday.png";
 import beer_png from "./assets/beer.png";
+import ProverbCard from "./post/Proverb/ProverbCard";
+import ShortTip from "./post/shell/ShortTip";
 import "./App.css"
 
 function AboutMe() {
@@ -37,7 +39,18 @@ function AboutMe() {
             </ul>
         </p>
         <h3>今日格言</h3>
+        <ProverbCard
+            date="2025-6-30"
+            proverb="The misfortune of the wise is better than the prosperity of the fool."
+            author="Epicurus"
+        />
         <h3>今日shell命令</h3>
+        <ShortTip
+            command="hash"
+            usage="hash [-r] [-p filename] [-dt] [name]"
+            description="hash命令用来缓存命令的路径，以加快后续的查找速度。"
+            href="/src/post/shell/ShellTips.html?id=2"
+        />
     </main>)
 }
 

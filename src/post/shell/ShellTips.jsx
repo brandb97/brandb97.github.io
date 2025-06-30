@@ -1,4 +1,5 @@
-import { StrictMode, useState } from 'react'
+import { StrictMode, useState, useEffect } from 'react'
+import { BrowserRouter, useSearchParams } from "react-router-dom";
 import { createRoot } from 'react-dom/client'
 import ShellTipsPosts from './TipsData.jsx';
 import Header from '../../Header.jsx';
@@ -6,7 +7,13 @@ import Footer from '../../Footer.jsx';
 import "../Post.css"
 
 function ShellTips() {
+    const [searchParams] = useSearchParams();
+    const id = searchParams.get("id");
     const [currentPage, setCurrentPage] = useState(0);
+    const postId = Math.max(0, Math.min(ShellTipsPosts.length - 1, parseInt(id ?? "1", 10) - 1));
+    useEffect(() => {
+        setCurrentPage(postId);
+    }, []);
     const { title, content } = ShellTipsPosts[currentPage];
 
     return (<>
@@ -39,6 +46,8 @@ function ShellTips() {
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <ShellTips />
+        <BrowserRouter>
+            <ShellTips />
+        </BrowserRouter>
     </StrictMode>,
 )
