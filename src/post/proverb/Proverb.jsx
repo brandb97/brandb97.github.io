@@ -18,7 +18,12 @@ function Proverb() {
                 date="2025-6-30"
                 proverb="The misfortune of the wise is better than the prosperity of the fool."
                 author="Epicurus"
-            />            
+            />
+            <ProverbCard
+                date="2025-7-1"
+                proverb="During times of universal deceit, telling the truth becomes a revolutionary act."
+                author="George Orwell"
+            />
         </div>
         <Footer></Footer>
     </>);

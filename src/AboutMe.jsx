@@ -40,16 +40,16 @@ function AboutMe() {
         </p>
         <h3>今日格言</h3>
         <ProverbCard
-            date="2025-6-30"
-            proverb="The misfortune of the wise is better than the prosperity of the fool."
-            author="Epicurus"
+            date="2025-7-1"
+            proverb="During times of universal deceit, telling the truth becomes a revolutionary act."
+            author="George Orwell"
         />
         <h3>今日shell命令</h3>
         <ShortTip
-            command="hash"
-            usage="hash [-r] [-p filename] [-dt] [name]"
-            description="hash命令用来缓存命令的路径，以加快后续的查找速度。"
-            href="/src/post/shell/ShellTips.html?id=2"
+            command="exec"
+            usage="exec [-cl] [-a name] [command [arguments]]"
+            description="exec命令用来执行一个新的命令，并替换当前的shell进程。"
+            href="/src/post/shell/ShellTips.html?id=1"
         />
     </main>)
 }
