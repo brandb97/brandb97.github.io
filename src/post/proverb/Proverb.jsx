@@ -24,6 +24,11 @@ function Proverb() {
                 proverb="During times of universal deceit, telling the truth becomes a revolutionary act."
                 author="George Orwell"
             />
+            <ProverbCard
+                date="2025-7-12"
+                proverb="强者为弱者开辟道路，但是强者往往为弱者所奴役，就像是老人为了大腹便便的游客打鱼一样。"
+                author="王晓波"
+            />
         </div>
         <Footer></Footer>
     </>);
