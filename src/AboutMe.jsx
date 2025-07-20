@@ -43,13 +43,13 @@ function AboutMe() {
             date="2025-7-12"
             proverb="强者为弱者开辟道路，但是强者往往为弱者所奴役，就像是老人为了大腹便便的游客打鱼一样。"
             author="王晓波"
-        />        
+        />
         <h3>今日shell命令</h3>
         <ShortTip
-            command="exec"
-            usage="exec [-cl] [-a name] [command [arguments]]"
-            description="exec命令用来执行一个新的命令，并替换当前的shell进程。"
-            href="/src/post/shell/ShellTips.html?id=1"
+            command="任务管理"
+            usage="jobs && kill && wait && bg && fg ..."
+            description="管理你创建的进程。"
+            href="/src/post/shell/ShellTips.html?id=3"
         />
     </main>)
 }
