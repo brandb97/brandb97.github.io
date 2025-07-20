@@ -18,6 +18,12 @@
     margin-left: 500px;
 }
 
+.ProverbCard a {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
 .proverb-body {
     width: 60%;
     margin: 0 auto;

@@ -1,7 +1,7 @@
 import me_and_rust_image from "./assets/me_and_rust.jpg";
 import birthday_png from "./assets/birthday.png";
 import beer_png from "./assets/beer.png";
-import ProverbCard from "./post/Proverb/ProverbCard";
+import TodayProverbCard from "./post/Proverb/TodayProverbCard";
 import ShortTip from "./post/shell/ShortTip";
 import "./App.css"
 
@@ -39,10 +39,11 @@ function AboutMe() {
             </ul>
         </p>
         <h3>今日格言</h3>
-        <ProverbCard
+        <TodayProverbCard
             date="2025-7-12"
             proverb="强者为弱者开辟道路，但是强者往往为弱者所奴役，就像是老人为了大腹便便的游客打鱼一样。"
             author="王晓波"
+            href="/src/post/proverb/Proverb.html"
         />
         <h3>今日shell命令</h3>
         <ShortTip
