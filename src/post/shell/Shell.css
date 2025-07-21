@@ -17,11 +17,18 @@
     margin-left: 2em;
 }
 
+.shell-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
 .shell-toc {
     list-style: none;
     padding: 0.25rem;
     border-radius: 12px;
     border: 1px solid #ccc;
+    position: fixed;
     width: 15rem;
 }
 
@@ -46,7 +53,7 @@
 
 .shell-body {
     width: 70%;
-    margin-left: 2em;
+    margin-left: 17em;
 }
 
 .shell-body .button {
@@ -58,7 +65,7 @@
     margin-left: auto;
 }
 
-.shell-body .warning {
+.warning {
     border: 1px solid rgba(51, 50, 50, 0.222);
     border-radius: 8px;
     background-color: hsl(185, 50%, 88%);

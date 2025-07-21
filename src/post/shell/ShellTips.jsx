@@ -45,7 +45,7 @@ function ShellTips() {
 
     return (<>
         <Header></Header>
-        <div className='flex-container'>
+        <div className='shell-layout'>
             <ShellToC pageId={currentPage}></ShellToC>
             <div className='shell-body'>
                 <div className='warning'>

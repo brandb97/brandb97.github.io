@@ -11,6 +11,8 @@ export default defineConfig({
         post: 'src/post/index.html',
         shell: 'src/post/shell/ShellTips.html',
         proverb: 'src/post/proverb/Proverb.html',
+        git_diff: 'src/post/git-diff/git-diff.html',
+        myscreen: 'src/post/myscreen/myscreen.html',
       }
     }
   }
