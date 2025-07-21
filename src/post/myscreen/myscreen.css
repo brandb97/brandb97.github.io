@@ -1,0 +1,31 @@
+.myscreen-body {
+    width: 70%;
+    margin-left: 2em;
+}
+
+.myscreen-toc {
+    list-style: none;
+    padding: 0.25rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    width: 15rem;
+}
+
+.myscreen-toc li {
+    padding: 0.25rem;
+}
+
+.myscreen-toc li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.25rem;
+    padding: 0.75rem;
+}
+
+.myscreen-toc li a:hover {
+    text-decoration: underline;
+}
+
+.myscreen-toc li .active {
+    color: black;
+}
