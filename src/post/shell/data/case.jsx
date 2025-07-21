@@ -3,7 +3,7 @@ import wip from '../../../assets/working-hard.gif';
 
 function case_content() {
     return (<div>
-        <h1 className="fancy-title">🚧 施工中... 🚧</h1>
+        <h1>🚧 施工中... 🚧</h1>
         <img
             src={wip}
             alt="work in progress gif"

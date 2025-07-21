@@ -16,3 +16,52 @@
 .short-shell-tip p {
     margin-left: 2em;
 }
+
+.shell-toc {
+    list-style: none;
+    padding: 0.25rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    width: 15rem;
+}
+
+.shell-toc li {
+    padding: 0.25rem;
+}
+
+.shell-toc li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.25rem;
+    padding: 0.75rem;
+}
+
+.shell-toc li a:hover {
+    text-decoration: underline;
+}
+
+.shell-toc li .active {
+    color: black;
+}
+
+.shell-body {
+    width: 70%;
+    margin-left: 2em;
+}
+
+.shell-body .button {
+    display: flex;
+    align-items: center;
+}
+
+.shell-body .button .button-right {
+    margin-left: auto;
+}
+
+.shell-body .warning {
+    border: 1px solid rgba(51, 50, 50, 0.222);
+    border-radius: 8px;
+    background-color: hsl(185, 50%, 88%);
+    padding: 10px;
+    margin: 10px 0;
+}

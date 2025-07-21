@@ -4,7 +4,34 @@ import { createRoot } from 'react-dom/client'
 import ShellTipsPosts from './TipsData.jsx';
 import Header from '../../Header.jsx';
 import Footer from '../../Footer.jsx';
-import "../Post.css"
+import "./Shell.css"
+
+function ShellToC(props) {
+    return (<>
+        <aside>
+            <ul className="shell-toc">
+                {[
+                    {id: 1, label:"exec"},
+                    {id: 2, label:"hash"},
+                    {id: 3, label:"任务管理"},
+                    {id: 4, label:"script"},
+                    {id: 5, label:"case"},
+                    {id: 6, label:"$@#!?"},
+                ].map((item) => {
+                    console.log(item, props);
+                    return (<li key={item.id}>
+                        <a
+                            className={props.pageId === item.id-1 ? "active" : ""}
+                            href={"/src/post/shell/ShellTips.html?id=" + item.id}
+                        >
+                            {item.label}
+                        </a>
+                    </li>)
+                })}
+            </ul>
+        </aside>
+    </>)
+}
 
 function ShellTips() {
     const [searchParams] = useSearchParams();
@@ -14,12 +41,13 @@ function ShellTips() {
     useEffect(() => {
         setCurrentPage(postId);
     }, []);
-    const { title, content } = ShellTipsPosts[currentPage];
+    const {title, content} = ShellTipsPosts[currentPage];
 
     return (<>
         <Header></Header>
         <div className='flex-container'>
-            <div className='post-body'>
+            <ShellToC pageId={currentPage}></ShellToC>
+            <div className='shell-body'>
                 <div className='warning'>
                     💡请在 <code>bash</code> 下执行该命令。
                 </div>
@@ -50,7 +78,7 @@ function ShellTips() {
 createRoot(document.getElementById('root')).render(
     <StrictMode>
         <BrowserRouter>
-            <ShellTips />
+            <ShellTips/>
         </BrowserRouter>
     </StrictMode>,
 )
