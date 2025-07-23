@@ -7,7 +7,10 @@ import introTerm from "./introTerm.jsx";
 import controlTerm from "./controlTerm.jsx";
 import introWin from "./introWin.jsx";
 import introCode from "./introCode.jsx"
+import codeStruct from "./codeStruct.jsx"
 import "./myscreen.css"
+import codeFrontEnd from "./codeFrontEnd.jsx";
+import codeDaemon from "./codeDaemon.jsx";
 
 const sections = [
     { id: "introTerm", label: "终端", level: 2 },
@@ -17,6 +20,7 @@ const sections = [
     { id: "codeStruct", label: "myscreen组成", level: 3 },
     { id: "codeFrontEnd", label: "myscreen前端", level: 3 },
     { id: "codeDaemon", label: "myscreen守护进程（后端）", level: 3 },
+    { id: "theEnd", label: "结束语", level: 2 },
 ];
 
 function MyScreenToC({ sectionRefs }) {
@@ -74,6 +78,14 @@ function MyScreenBody({ sectionRefs }) {
         ["controlTerm", { content: controlTerm() }],
         ["introWin", { content: introWin() }],
         ["introCode", { content: introCode() }],
+        ["codeStruct", { content: codeStruct() }],
+        ["codeFrontEnd", { content: codeFrontEnd() }],
+        ["codeDaemon", { content: codeDaemon() }],
+        ["theEnd", { content: <div>
+                <p className="indent">
+                    wu~，大功告成。如果你想完善这篇博客，feel free to send me issue on github。Happy coding😄
+                </p>
+            </div> }]
     ]);
     return (
         <div className="myscreen-body">
