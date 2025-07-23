@@ -1,14 +1,8 @@
-import wip from "../../assets/working-hard.gif"
-
 function IntroCode() {
     return (<div>
-        <h3>🚧 施工中... 🚧</h3>
-        <img
-            src={wip}
-            alt="work in progress gif"
-            className="work-in-progress-img"
-        >
-        </img>
+        <p className="indent">
+            终于，我们可以看看该怎么写代码了。你可以在<a href="https://github.com/brandb97/myscreen">这里</a>下载一份myscreen的代码。
+        </p>
     </div>)
 }
 

@@ -22,12 +22,27 @@
     font-family: 'ZCOOL XiaoWei', 'LXGW WenKai', 'Microsoft YaHei', sans-serif;
 }
 
+.myscreen-body h3 {
+    color: hsl(36, 82%, 55%);
+    margin-bottom: 1em;
+    font-family: 'ZCOOL XiaoWei', 'LXGW WenKai', 'Microsoft YaHei', sans-serif;
+}
+
 .myscreen-body h2 .anchor-link {
     text-decoration: none;
     opacity: 0.1;
 }
 
 .myscreen-body h2 .anchor-link:hover {
+    opacity: 0.5;
+}
+
+.myscreen-body h3 .anchor-link {
+    text-decoration: none;
+    opacity: 0.1;
+}
+
+.myscreen-body h3 .anchor-link:hover {
     opacity: 0.5;
 }
 
@@ -59,15 +74,43 @@
     text-decoration: none;
     color: gray;
     font-size: 1.25rem;
-    padding: 0.75rem;
+    padding-left: 0.75rem;
+    display: inline-block;
 }
 
 .myscreen-toc li a:hover {
     text-decoration: underline;
 }
 
+.myscreen-toc li .normal-2 {
+
+}
+
+.myscreen-toc li .normal-3 {
+    font-size: 0.85rem;
+    text-indent: 1rem;
+}
+
+.myscreen-toc li .normal-3:before {
+    content: "❀ ";
+}
+
 .myscreen-toc li .active {
     color: black;
+}
+
+.myscreen-toc li .active-2 {
+    color: black;
+}
+
+.myscreen-toc li .active-3 {
+    color: black;
+    font-size: 0.85rem;
+    text-indent: 1rem;
+}
+
+.myscreen-toc li .active-3:before {
+    content: "❀ ";
 }
 
 .myscreen-section {
@@ -98,4 +141,26 @@
 
 .notice a:hover {
     text-decoration: underline;
+}
+
+.tips {
+    border: 1px solid rgba(51, 50, 50, 0.222);
+    border-radius: 8px;
+    background-color: hsl(180, 73%, 97%);
+    padding: 10px;
+    margin: 10px 0;
+    font-family: 'ZCOOL XiaoWei', 'Noto Sans SC', sans-serif;
+    font-size: 1em;
+}
+
+.tips a {
+    text-decoration: none;
+}
+
+.tips a:hover {
+    text-decoration: underline;
+}
+
+.indent {
+    text-indent: 2em;
 }

@@ -4,14 +4,19 @@ import { createRoot } from 'react-dom/client'
 import Header from "../../Header.jsx";
 import Footer from "../../Footer.jsx";
 import introTerm from "./introTerm.jsx";
+import controlTerm from "./controlTerm.jsx";
 import introWin from "./introWin.jsx";
 import introCode from "./introCode.jsx"
 import "./myscreen.css"
 
 const sections = [
-    { id: "introTerm", label: "终端" },
-    { id: "introWin", label: "窗口管理" },
-    { id: "introCode", label: "myscreen" },
+    { id: "introTerm", label: "终端", level: 2 },
+    { id: "controlTerm", label: "终端驱动", level: 3 },
+    { id: "introWin", label: "窗口管理", level: 2 },
+    { id: "introCode", label: "myscreen", level: 2 },
+    { id: "codeStruct", label: "myscreen组成", level: 3 },
+    { id: "codeFrontEnd", label: "myscreen前端", level: 3 },
+    { id: "codeDaemon", label: "myscreen守护进程（后端）", level: 3 },
 ];
 
 function MyScreenToC({ sectionRefs }) {
@@ -46,7 +51,9 @@ function MyScreenToC({ sectionRefs }) {
             {sections.map((section) => (
                 <li key={section.id}>
                     <a
-                        className={activeId === section.id ? "active" : ""}
+                        className={`${
+                            activeId === section.id ? "active" : "normal"
+                        }-${section.level}`}
                         href={`#${section.id}`}
                         onClick={(e) => {
                             e.preventDefault();
@@ -64,6 +71,7 @@ function MyScreenToC({ sectionRefs }) {
 function MyScreenBody({ sectionRefs }) {
     const body_contents_map = new Map([
         ["introTerm", { content: introTerm() }],
+        ["controlTerm", { content: controlTerm() }],
         ["introWin", { content: introWin() }],
         ["introCode", { content: introCode() }],
     ]);
@@ -93,9 +101,15 @@ function MyScreenBody({ sectionRefs }) {
                     ref={(el) => (sectionRefs.current[item.id] = el)}
                     className="myscreen-section"
                 >
-                    <h2>
-                        <a href={`#${item.id}`} className="anchor-link">§</a> {item.label}
-                    </h2>
+                    {item.level === 2 ? (
+                        <h2>
+                            <a href={`#${item.id}`} className="anchor-link">§</a> {item.label}
+                        </h2>
+                    ) : (
+                        <h3>
+                            <a href={`#${item.id}`} className="anchor-link">§</a> {item.label}
+                        </h3>
+                    )}
 
                     <div className="content">
                         {body_contents_map.get(item.id)?.content}

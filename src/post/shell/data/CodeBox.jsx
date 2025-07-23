@@ -4,12 +4,17 @@ import "./Data.css"
 
 function CodeBox(props) {
     return (
-        <div className="code-box">
+        <div style={{
+            backgroundColor: theme.plain.backgroundColor,
+            border: '1px solid #ccc',
+            borderRadius: '8px',
+            margin: 'auto 0',
+        }}>
             <Highlight {...defaultProps} code={props.code} language={props.language} theme={theme}>
                 {({ className, style, tokens, getLineProps, getTokenProps }) => (
                     <pre className={className} style={style}>
                         {tokens.map((line, i) => (
-                            <div {...getLineProps({ line, key: i })} style={{ display: 'table-row' }}>
+                            <div {...getLineProps({ line, key: i })} style={{display: 'table-row'}}>
                                 <span style={{
                                     display: 'table-cell',
                                     textAlign: 'right',
