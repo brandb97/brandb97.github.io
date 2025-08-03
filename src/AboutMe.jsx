@@ -38,6 +38,39 @@ function AboutMe() {
                 <li>写作：为了记录，分享和了解自己</li>
             </ul>
         </p>
+        <h3>技术贴示</h3>
+        <div style={{fontSize: "1.1em"}}>
+            <h4 style={{textAlign: "center"}}>The usual way to compose a log message</h4>
+            <h4 style={{textAlign: "center"}}>如何（为git commit）写提交摘要</h4>
+            <span style={{
+                marginLeft: "900px",
+                textAlign: "center",
+                fontStyle: "italic",
+            }}>
+                Junio C Hamano (git maintainer)
+            </span>
+            <span style={{
+                marginLeft: "900px",
+                textAlign: "center",
+                fontStyle: "italic",
+            }}>
+                滨野纯 (开源项目git维护者)
+            </span>
+            <ul>
+                <li> <span style={{fontWeight: "bold"}}>motivation（动机）</span>
+                    <p>Give an observation on how the current system works in the present tense (so no need to say "Currently X is Y", or "Previously X was Y" to describe the state before your change; just "X is Y" is enough), and discuss what you perceive as a problem in it.</p>
+                    <p>说明系统目前是怎么工作的（没有必要使用"Currently X is Y"或者"Previously X is Y"，直接说"X is Y"就可以）。然后说明你认为当前系统中存在什么问题。</p>
+                </li>
+                <li> <span style={{fontWeight: "bold"}}>proposal（解决方案）</span>
+                    <p>Propose a solution (optional---often, problem description trivially leads to an obvious solution in reader's minds).</p>
+                    <p>提供一个解决方案（可选。一般情况下，提出合理的问题后，解决方案就已经很明显）</p>
+                </li>
+                <li> <span style={{fontWeight: "bold"}}>implementation（实现）</span>
+                    <p>Give commands to somebody editing the codebase to "make it so", instead of saying "This commit does X".</p>
+                    <p>使用祈使句告诉读者如何写代码解决问题（写成“在X加入条件判断Y来完成Z”，而不要写成“本次提交为了完成Z在X加入了条件判断Y”）。</p>
+                </li>
+            </ul>
+        </div>
         <h3>今日格言</h3>
         <TodayProverbCard
             date="2025-7-12"
