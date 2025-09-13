@@ -42,20 +42,20 @@ function AboutMe() {
         <div style={{fontSize: "1.1em"}}>
             <h4 style={{textAlign: "center"}}>The usual way to compose a log message</h4>
             <h4 style={{textAlign: "center"}}>如何（为git commit）写提交摘要</h4>
-            <span style={{
-                marginLeft: "900px",
+            <p style={{
+                marginLeft: "200px",
                 textAlign: "center",
                 fontStyle: "italic",
             }}>
                 Junio C Hamano (git maintainer)
-            </span>
-            <span style={{
-                marginLeft: "900px",
+            </p>
+            <p style={{
+                marginLeft: "200px",
                 textAlign: "center",
                 fontStyle: "italic",
             }}>
                 滨野纯 (开源项目git维护者)
-            </span>
+            </p>
             <ul>
                 <li> <span style={{fontWeight: "bold"}}>motivation（动机）</span>
                     <p>Give an observation on how the current system works in the present tense (so no need to say "Currently X is Y", or "Previously X was Y" to describe the state before your change; just "X is Y" is enough), and discuss what you perceive as a problem in it.</p>
